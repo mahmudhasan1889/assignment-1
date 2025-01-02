@@ -1,0 +1,432 @@
+/* Templates */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+
+/* Actual Code */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+
+body{
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover{
+    text-decoration: underline;
+}
+
+
+
+/* Header  */
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header{
+    padding: 14px 100px;
+    background-color: rgb(6, 94, 209);
+    color: white;
+}
+
+.logo-img{
+    font-size: 18px;
+    color: white;
+}
+
+.logo-text{
+    display: inline;
+}
+
+.logo{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.logo-text span{
+    font-family: "Audiowide", sans-serif;
+    font-size: 18px;
+}
+
+.logo-text > .sheild{
+    color: rgb(255, 255, 255);
+    position: relative;
+    z-index: 23;
+}
+
+.logo-text > .chain{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 81, 0);
+    box-sizing: border-box;
+    padding: 0px 8px;
+    margin-left: -1px;
+    border-radius: 10px;
+}
+
+
+.menu li{
+    display: inline;
+    padding-right: 8px;
+}
+
+.register i{
+    display: none;
+}
+
+.register button{
+    background-color: rgb(255, 81, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.register button:hover{
+    background-color: rgb(196, 62, 0);
+    box-shadow: 1px 1px 1px 1px rgba(206, 206, 206, 0.637);
+}
+
+.register button:hover i{
+    display: inline;
+}
+
+
+
+/* main  */
+main{
+    padding: 14px 70px;
+}
+
+
+/* Section 1: Bannner */
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.banner-content .btn button{
+    background-color: rgb(255, 81, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 8px;
+}
+
+.banner-content .btn button:hover{
+    background-color: rgb(196, 62, 0);
+    box-shadow: 1px 1px 1px 1px rgba(206, 206, 206, 0.637);
+}
+
+
+/* Section 2: Our Clients */
+.our-clients{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    background-color: rgba(0, 188, 245, 0.205);
+    margin-top: 50px;
+}
+
+.our-clients .text{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.client-logos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.client-logos i{
+    margin: 4px;
+}
+
+
+/* Section 3: Power of Blockchain */
+.power-of-blockchain{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.power-of-blockchain .title{
+    text-align: center;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.boxes .box i{
+    color: rgb(255, 81, 0);
+}
+
+.box{
+    padding: 5px;
+    background-color: rgba(0, 188, 245, 0.205);
+}
+
+
+/* Section 4: Helping Blockchain */
+.helping-blockchain{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.helping-blockchain .text{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.lists{
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+    padding: 10px;
+    background-color: rgba(111, 183, 255, 0.705);
+    border-radius: 5px;
+}
+
+.list i{
+    color: rgb(255, 81, 0);
+}
+
+
+/* Section 5: Blockchain Future */
+.blockchain-future{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.blockchain-future .text{
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.card{
+    margin-right: 5px;
+    width: 33.33%;
+    padding: 5px;
+    border: 1px solid orange;
+    background-color: rgba(255, 82, 1, 0.849);
+    color: white;
+}
+
+.card:hover{
+    background-color: rgb(255, 81, 0);
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 1px rgb(36, 36, 36);
+}
+
+.readmore{
+    cursor: pointer;
+}
+.readmore i{
+    display: none;
+}
+.readmore:hover i{
+    display: inline;
+}
+.card img{
+    width: 100%;
+}
+
+
+/* Section 6: Contact us */
+.contact-us{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+.contact-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.form{
+    background-color: rgb(0, 136, 247);
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+}
+.form h2{
+    text-align: center;
+    color: aliceblue;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input{
+    margin-bottom: 4px;
+    border: none;
+    padding: 4px;
+    border-radius: 4px;
+}
+textarea{
+    border: none;
+    padding: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+
+.submit{
+    background-color: rgb(255, 81, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 8px;
+}
+.submit:hover{
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+    font-size: 14px;
+}
+
+
+/* footer  */
+
+footer{
+    background-color: rgb(6, 94, 209);
+    margin-top: 16px;
+    color: white;
+}
+
+.footer-content{
+    padding: 14px 70px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer a,li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.social{
+    font-size: 1.5rem;
+}
+
+.social a{
+    padding-right: 5px;
+}
+
+.newsletter input{
+    border: none;
+    padding: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+}
+
+.newsletter button{
+    background-color: rgb(255, 81, 0);
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 8px;
+}
+
+
